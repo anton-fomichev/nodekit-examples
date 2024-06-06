@@ -8,8 +8,8 @@ Development usage:
 mkdir nodekit-dev && cd nodekit-dev
 
 # Cloning and linking base libraries
-(git clone git@github.com:gravity-ui/nodekit && cd nodekit && npm ci && npm link)
-(git clone git@github.com:gravity-ui/expresskit && cd expresskit && npm ci && npm link)
+(git clone git@github.com:gravity-ui/nodekit && cd nodekit && npm ci && npm run build && npm link)
+(git clone git@github.com:gravity-ui/expresskit && cd expresskit && npm ci && npm run build && npm link)
 
 # Cloning examples
 git clone git@github.com:gravity-ui/nodekit-examples
