@@ -1,0 +1,21 @@
+{
+  "extends": "@gravity-ui/tsconfig/tsconfig",
+  "compilerOptions": {
+    "outDir": "build",
+    "paths": {
+      "@gravity-ui/nodekit": [
+        "../../nodekit/"
+      ],
+      "@gravity-ui/expresskit": [
+        "../../expresskit/"
+      ]
+    },
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "excludeDirectories": [
+    "node_modules",
+    "build"
+  ]
+}

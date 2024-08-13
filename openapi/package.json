@@ -1,0 +1,28 @@
+{
+  "name": "@gravity-ui/nodekit-demo",
+  "version": "0.1.0",
+  "description": "Dev app for NodeKit",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "tsc-watch -w --onSuccess 'node build/'"
+  },
+  "author": "Gravity UI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@gravity-ui/eslint-config": "^3.2.0",
+    "@gravity-ui/prettier-config": "^1.1.0",
+    "@gravity-ui/tsconfig": "^1.0.0",
+    "@types/node": "^22.2.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@gravity-ui/nodekit": "../../nodekit/",
+    "@gravity-ui/expresskit": "../../expresskit/",
+    "axios": "^1.7.3"
+  }
+}

@@ -8,5 +8,6 @@ node_modules
 /storybook-static
 /basic/build
 /express/build
+/openapi/build
 /styles/**/*.css
 /coverage
