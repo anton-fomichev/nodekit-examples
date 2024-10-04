@@ -1,0 +1,6 @@
+title: OpenAPI extension
+description: OpenAPI extension for @gravity-ui/expresskit package.
+links:
+- title: Docs
+  description: Automatically generated OpenAPI docs.
+  href: openapi/

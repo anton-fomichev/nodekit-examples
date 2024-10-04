@@ -8,6 +8,9 @@
       ],
       "@gravity-ui/expresskit": [
         "../../expresskit/"
+      ],
+      "openapi-extension": [
+        "../../openapi-extension"
       ]
     },
   },
