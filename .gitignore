@@ -11,3 +11,5 @@ node_modules
 /openapi/build
 /styles/**/*.css
 /coverage
+
+.DS_Store

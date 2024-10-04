@@ -1,0 +1,22 @@
+allowHTML: true
+strict: true
+docs-viewer:
+  project-name: stackoverflow
+  abc-slug: stackoverflow
+
+  index-page: # Настройка отображения карточки проекта на разводящей
+    hidden: false # Прятать ли проект на разводящей
+    title: Stack Overflow # Используется для формирования логотипа проекта в шапке сайта
+    description: Документация Stack Overflow
+    service-url: https://stackoverflow.yandex-team.ru # Ccылка на сервис в карточке проекта
+
+  releasers:
+    - ravestar
+    - merlone
+
+  feedback:
+    notifications:
+    interval: weekly
+    receivers:
+      - ravestar
+      - merlone

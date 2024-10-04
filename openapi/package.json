@@ -6,7 +6,10 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "dev": "tsc-watch -w --onSuccess 'node build/'"
+    "dev": "tsc-watch -w --onSuccess 'node build/'",
+    "prepare:docs": "ts-node src/generateDocs.ts",
+    "yfm:build": "yfm -i ./docs -o ./docs/out",
+    "build:docs": "npm run prepare:docs && npm run yfm:build && http-server ./docs/out"
   },
   "author": "Gravity UI Team",
   "license": "MIT",
@@ -16,13 +19,15 @@
     "@gravity-ui/tsconfig": "^1.0.0",
     "@types/node": "^22.2.0",
     "eslint": "^8.57.0",
+    "http-server": "^14.1.1",
     "prettier": "^3.3.3",
     "tsc-watch": "^6.2.0",
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@gravity-ui/nodekit": "../../nodekit/",
     "@gravity-ui/expresskit": "../../expresskit/",
-    "axios": "^1.7.3"
+    "@gravity-ui/nodekit": "../../nodekit/",
+    "axios": "^1.7.3",
+    "openapi-extension": "../../openapi-extension/"
   }
 }
